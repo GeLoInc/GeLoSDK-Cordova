@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.phonegap.plugins.GeLoCordovaPlugin"
+    version="2.1.1">
+
+    <name>GeLoCordovaPlugin</name>
+  <author>Thomas and Zach</author>
+  
+  <description>
+    This plugin is amazing.
+  </description>
+
+  <license>MIT</license>
+  
+  <js-module src="www/GeLoCordovaPlugin.js" name="GeLoCordovaPlugin">
+    <clobbers target="GeLoCordovaPlugin" />
+  </js-module>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>  
+  
+  <!-- ios -->
+  <platform name="ios">
+    
+    <config-file target="config.xml" parent="/*">
+      <feature name="GeLoCordovaPlugin">
+        <param name="ios-package" value="GeLoCordovaPlugin"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/GeLoCordovaPlugin.h" target-dir="GeLoCordovaPlugin/"/>
+    <source-file src="src/ios/GeLoCordovaPlugin.m" target-dir="GeLoCordovaPlugin/"/>
+
+    <header-file src="src/ios/GeLoCordovaPluginJavaScriptExpression.h" target-dir="GeLoCordovaPlugin/"/>
+    <source-file src="src/ios/GeLoCordovaPluginJavaScriptExpression.m" target-dir="GeLoCordovaPlugin/"/>
+
+  </platform>
+</plugin>
