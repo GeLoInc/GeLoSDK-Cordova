@@ -2,8 +2,8 @@ This is the GeLoSDK plugin for PhoneGap / Cordova. It exposes a higher level JS 
 
 ## Supported Platforms
 
-* iOS (supports GeloSDK 1.1.x, 2.0.0 support coming soon!)
-* Android (not yet, coming)
+* iOS (supports [latest](https://github.com/GeLoInc/GeLoSDK-iOS) GeloSDK, [2.0.1](https://github.com/GeLoInc/GeLoSDK-iOS/tree/v2.0.1), [2.0.0](http://github.com/GeLoInc/GeLoSDK-iOS/tree/v2.0.0), and [1.1.9](https://github.com/GeLoInc/GeLoSDK-iOS/tree/v1.1.9))
+* Android (not yet supported, coming soon)
 
 ## Supported GeLo Events
 
